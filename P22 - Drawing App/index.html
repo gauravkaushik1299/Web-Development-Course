@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Drawing App</title>
 </head>
 <body>
-    
+    <canvas id="canvas" width="804" height="635"></canvas>
+    <div class="toolbox">
+        <button id="decrease" aria-label="Decrease Brush Size">-</button>
+        <span id="size">10</span>
+        <button id="increase" aria-label="Increase Brush Size">+</button>
+        <input type="color" id="color" aria-label="Pick Brush Color">
+        <button id="clear" aria-label="Clear Canvas">🗑️</button>
+    </div>
+    <script src="script.js"></script>
 </body>
-
-<script src="script.js"></script>
 </html>

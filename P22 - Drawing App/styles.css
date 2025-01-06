@@ -5,14 +5,48 @@
 }
 
 body {
-    background-color: #686de0;
-    font-family: 'roboto', sans-serif;
+    background-color: #f0f4f8; /* Light blue-gray */
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow:hidden;
     margin: 0;
-    padding: 20px;
+}
+
+canvas {
+    border: 2px solid #1e88e5; /* Bright blue */
+}
+
+.toolbox {
+    background-color: #90caf9; /* Light blue */
+    border: 1px solid #64b5f6; /* Slightly darker blue */
+    display: flex;
+    width: 804px;
+    padding: 1rem;
+}
+
+.toolbox > * {  
+    background-color: #fff;
+    border: 1px solid #1e88e5; /* Bright blue border */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth hover transition */
+}
+
+.toolbox > *:hover {
+    background-color: #42a5f5; /* Medium blue hover effect */
+    border-color: #1e88e5;
+}
+
+.toolbox > *:last-child {
+    margin-left: auto;
 }
