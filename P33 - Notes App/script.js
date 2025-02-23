@@ -88,7 +88,3 @@ function updateLS() {
   // Update local storage
   localStorage.setItem("notes", JSON.stringify(notes));
 }
-
-
-
-
